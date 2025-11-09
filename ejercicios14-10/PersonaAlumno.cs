@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ejercicios14_10
 {
@@ -10,6 +11,14 @@ namespace ejercicios14_10
     {
         protected int legajo { get; set; }
         protected double promedio { get; set; }
+
+
+        
+        public int Getlegajo() => legajo;
+        public double Getpromedio() => promedio;
+
+        public void Setlegajo(int Legajo) => legajo = Legajo;
+        public void Setpromedio(int Promedio) => promedio = Promedio;
 
         public PersonaAlumno()
         {

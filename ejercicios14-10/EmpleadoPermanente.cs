@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ejercicios14_10
 {
@@ -10,6 +11,9 @@ namespace ejercicios14_10
     { 
         protected int anioAntiguedad { get; set; }
         protected double extra { get; set; } = 40000.00;
+
+        public int GetanioAntiguedad() => anioAntiguedad;
+        public void SetanioAntiguedad(int AnioAntiguedad) => anioAntiguedad = AnioAntiguedad;
 
         public EmpleadoPermanente()
         {

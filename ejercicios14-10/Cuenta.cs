@@ -11,6 +11,10 @@ namespace ejercicios14_10
         protected int numeroCuenta { get; set; }
         protected string titular { get; set; }
         protected double saldo { get; set; } = 0.00;
+
+        public int GetNumeroCuenta() => numeroCuenta;
+        public string GetTitular() => titular;
+        public double GetSaldo() => saldo;
         public Cuenta()
         {
         }

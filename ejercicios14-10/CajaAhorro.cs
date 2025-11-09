@@ -8,7 +8,11 @@ namespace ejercicios14_10
 {
     internal class CajaAhorro : Cuenta
     {
-        private double tasaInteres;
+        protected double tasaInteres ;
+
+        public double GetTasaInteres() => tasaInteres;
+        public void SetTasaInteres(double tasa) => tasaInteres = tasa;
+
 
         public CajaAhorro(int numeroCuenta, string titular, double tasaInteres)
             : base(numeroCuenta, titular)

@@ -14,6 +14,19 @@ namespace ejercicios14_10
         protected string modelo { get; set; }
         protected int anio { get; set; }
 
+        public int GetIdVehiculo() => IdVehiculo;
+        public void SetIdVehiculo(int id) => IdVehiculo = id;
+
+        public string GetMarca() => marca;
+        public void SetMarca(string valor) => marca = valor;
+
+        public string GetModelo() => modelo;
+        public void SetModelo(string valor) => modelo = valor;
+
+        public int GetAnio() => anio;
+        public void SetAnio(int valor) => anio = valor;
+
+
         public Vehiculo()
         {
            

@@ -13,7 +13,8 @@ namespace ejercicios14_10
 
         protected int cilindrada { get; set; }
 
-
+        public int GetCilindrada() => cilindrada;
+        public void SetCilindrada(int Cilindrada) => cilindrada = Cilindrada;
         public Moto()
         {
         }

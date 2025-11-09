@@ -8,7 +8,11 @@ namespace ejercicios14_10
 {
     internal class CuentaCorriente : Cuenta
     {
-        private double limiteDescubierto;
+        protected double limiteDescubierto;
+
+        public double GetLimiteDescubierto() => limiteDescubierto;
+        public void SetLimiteDescubierto(double limite) => limiteDescubierto = limite;
+
 
         public CuentaCorriente(int numeroCuenta, string titular, double limiteDescubierto)
             : base(numeroCuenta, titular)

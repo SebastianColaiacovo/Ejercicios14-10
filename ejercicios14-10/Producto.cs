@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ejercicios14_10
 {
@@ -12,6 +13,17 @@ namespace ejercicios14_10
         protected string nombreProducto { get; set; }
         protected double precioBase { get; set; }
 
+
+
+        public int GetId() => idProducto;
+        public string GetNombre() => nombreProducto;
+        
+        public double GetPrecioBase() => precioBase;
+
+        public void SetId(int id) => idProducto = id;
+        public void SetNombre(string Nombre) => nombreProducto = Nombre;
+        
+        public void SetPrecioBase(double PBASE) => precioBase = PBASE;
         public Producto()
         {
         }

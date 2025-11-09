@@ -12,6 +12,11 @@ namespace ejercicios14_10
     {
         protected int CantPuertas { get; set; }
 
+        public int GetCantPuertas() => CantPuertas;
+        public void SetCantPuertas(int CANTPuertas) => CantPuertas = CANTPuertas;
+
+        
+
 
         public Auto()
         {

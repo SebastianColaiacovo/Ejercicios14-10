@@ -10,6 +10,10 @@ namespace ejercicios14_10
     {
         protected int MesesDeGarantia { get; set; }
 
+        public int GetMesesDeGarantia() => MesesDeGarantia;
+
+        public void SetMesesDeGarantia(int mesesDeGarantia) => MesesDeGarantia = mesesDeGarantia;
+
         public ProductoElectronico()
         {
         }

@@ -11,6 +11,13 @@ namespace ejercicios14_10
         protected string materia { get; set; }
         protected double sueldo { get; set; }
 
+        public string Getmateria() => materia;
+        public double Getsueldo() => sueldo;
+
+        public void Setmateria(string Materia) => materia = Materia;
+        public void Setsueldo(double Sueldo) => sueldo = Sueldo;
+
+
         public PersonaProfesor()
         {
         }

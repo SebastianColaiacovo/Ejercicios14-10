@@ -10,6 +10,8 @@ namespace ejercicios14_10
     {
         protected int capacidadCarga { get; set; }
 
+        public int GetcapacidadCarga() => capacidadCarga;
+        public void SetcapacidadCarga(int CapacidadCarga) => capacidadCarga = CapacidadCarga;
 
         public Camion()
         {

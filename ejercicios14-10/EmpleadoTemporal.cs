@@ -9,7 +9,12 @@ namespace ejercicios14_10
     internal class EmpleadoTemporal : Empleado
     {
         protected int horasTrabajadas { get; set; }
-        protected double valorHora { get; set; } = 20000.00;
+        protected double valorHora { get; set; } = 10000.00;
+
+
+        public int GethorasTrabajadas() => horasTrabajadas;
+        public void SethorasTrabajadas(int HorasTrabajadas) => horasTrabajadas = HorasTrabajadas;
+
 
         public EmpleadoTemporal()
         {

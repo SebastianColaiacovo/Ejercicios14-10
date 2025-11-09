@@ -8,13 +8,18 @@ namespace ejercicios14_10
 {
     internal class ProductoAlimenticio : Producto
     {
-        protected string fechaCaducidad { get; set; }
-        
+        protected DateTime fechaCaducidad { get; set; }
+
+        public DateTime GetfechaCaducidad() => fechaCaducidad;
+
+        public void SetId(DateTime FechaCaducidad) => fechaCaducidad = FechaCaducidad;
+
+
         public ProductoAlimenticio()
         {
         }
 
-        public ProductoAlimenticio(int idProducto, string nombreProducto, double precioBase, string fechaCaducidad)
+        public ProductoAlimenticio(int idProducto, string nombreProducto, double precioBase, DateTime fechaCaducidad)
             : base(idProducto, nombreProducto, precioBase)
         {
             this.fechaCaducidad = fechaCaducidad;
